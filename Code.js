@@ -10,8 +10,8 @@ function getRandomInt(max) {
 }
 
 function sumWork(sheet) {
-  var max = 10;
-  for (var i=1; i <= 20 ; i++) {
+  var max = 11;
+  for (var i=1; i <= 40 ; i++) {
     var cell1 = sheet.getRange("A" + i);
     cell1.setValue(getRandomInt(max));
     cell1.setFontSize(16);
@@ -36,8 +36,8 @@ function sumWork(sheet) {
 }
 
 function subWork(sheet) {
-  var max = 10;
-  for (var i=1; i <= 20 ; i++) {
+  var max = 11;
+  for (var i=1; i <= 40 ; i++) {
     var val1 = getRandomInt(max);
     var val2 = getRandomInt(max);
     var low = val1;
@@ -65,6 +65,6 @@ function subWork(sheet) {
     cell4.setValue("＝");
     cell4.setFontSize(16);
     cell4.setFontWeight("bold");
-    cell4.setHorizontalAlignment("center");
+    cell4.setHorizontalAlignment("left");
   }
 }
